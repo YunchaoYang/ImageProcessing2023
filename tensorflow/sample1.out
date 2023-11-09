@@ -1,0 +1,337 @@
+INFO:    underlay of /usr/bin/nvidia-cuda-mps-server required more than 50 (451) bind mounts
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 21.04-tf2 (build 22382848)
+TensorFlow Version 2.4.0
+
+Container image Copyright (c) 2021, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017-2021 The TensorFlow Authors.  All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2021, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+2023-11-07 12:51:51.157082: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-11-07 12:51:59.340379: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-11-07 12:51:59.342357: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2023-11-07 12:51:59.512414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 0 with properties: 
+pciBusID: 0000:1a:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:51:59.512898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 1 with properties: 
+pciBusID: 0000:1b:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:51:59.513351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 2 with properties: 
+pciBusID: 0000:60:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:51:59.513796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 3 with properties: 
+pciBusID: 0000:61:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:51:59.514240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 4 with properties: 
+pciBusID: 0000:b1:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:51:59.514681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 5 with properties: 
+pciBusID: 0000:b2:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:51:59.515135: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 6 with properties: 
+pciBusID: 0000:da:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:51:59.515574: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 7 with properties: 
+pciBusID: 0000:db:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:51:59.515599: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-11-07 12:51:59.836481: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-11-07 12:51:59.836544: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2023-11-07 12:51:59.913834: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-11-07 12:52:00.002490: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-11-07 12:52:00.082728: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-11-07 12:52:00.178913: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-11-07 12:52:00.179854: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-11-07 12:52:00.186652: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1889] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2023-11-07 12:52:00.188090: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-11-07 12:52:01.134758: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 0 with properties: 
+pciBusID: 0000:1a:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:52:01.135220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 1 with properties: 
+pciBusID: 0000:1b:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:52:01.135648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 2 with properties: 
+pciBusID: 0000:60:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:52:01.136058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 3 with properties: 
+pciBusID: 0000:61:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:52:01.136475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 4 with properties: 
+pciBusID: 0000:b1:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:52:01.136883: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 5 with properties: 
+pciBusID: 0000:b2:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:52:01.137293: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 6 with properties: 
+pciBusID: 0000:da:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:52:01.137697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1747] Found device 7 with properties: 
+pciBusID: 0000:db:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.75GiB deviceMemoryBandwidth: 573.69GiB/s
+2023-11-07 12:52:01.137726: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-11-07 12:52:01.137755: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-11-07 12:52:01.137771: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2023-11-07 12:52:01.137786: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-11-07 12:52:01.137802: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-11-07 12:52:01.137816: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-11-07 12:52:01.137830: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-11-07 12:52:01.137844: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-11-07 12:52:01.143832: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1889] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2023-11-07 12:52:01.147191: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-11-07 12:52:11.329060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1287] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-11-07 12:52:11.329127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1293]      0 1 2 3 4 5 6 7 
+2023-11-07 12:52:11.329154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306] 0:   N N N N N N N N 
+2023-11-07 12:52:11.329175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306] 1:   N N N N N N N N 
+2023-11-07 12:52:11.329188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306] 2:   N N N N N N N N 
+2023-11-07 12:52:11.329205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306] 3:   N N N N N N N N 
+2023-11-07 12:52:11.329219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306] 4:   N N N N N N N N 
+2023-11-07 12:52:11.329234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306] 5:   N N N N N N N N 
+2023-11-07 12:52:11.329246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306] 6:   N N N N N N N N 
+2023-11-07 12:52:11.329257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1306] 7:   N N N N N N N N 
+2023-11-07 12:52:11.374946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9665 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2023-11-07 12:52:11.450848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 9665 MB memory) -> physical GPU (device: 1, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:1b:00.0, compute capability: 7.5)
+2023-11-07 12:52:11.451665: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 9665 MB memory) -> physical GPU (device: 2, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:60:00.0, compute capability: 7.5)
+2023-11-07 12:52:11.452467: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 9665 MB memory) -> physical GPU (device: 3, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:61:00.0, compute capability: 7.5)
+2023-11-07 12:52:11.453265: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 9665 MB memory) -> physical GPU (device: 4, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:b1:00.0, compute capability: 7.5)
+2023-11-07 12:52:11.454065: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 9665 MB memory) -> physical GPU (device: 5, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:b2:00.0, compute capability: 7.5)
+2023-11-07 12:52:11.454860: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 9665 MB memory) -> physical GPU (device: 6, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:da:00.0, compute capability: 7.5)
+2023-11-07 12:52:11.455649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 9665 MB memory) -> physical GPU (device: 7, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:db:00.0, compute capability: 7.5)
+2023-11-07 12:52:12.612628: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2023-11-07 12:52:12.644463: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2800000000 Hz
+2023-11-07 12:52:13.344969: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-11-07 12:52:18.033774: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2023-11-07 12:52:18.173856: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+mean:  120.70756512369792
+stddev:  64.1500758911213
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 16, 16, 64)        4864      
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 8, 8, 64)          36928     
+_________________________________________________________________
+flatten (Flatten)            (None, 4096)              0         
+_________________________________________________________________
+dense (Dense)                (None, 10)                40970     
+=================================================================
+Total params: 82,762
+Trainable params: 82,762
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+500/500 - 19s - loss: 1.4718 - accuracy: 0.4803 - val_loss: 1.2854 - val_accuracy: 0.5423
+Epoch 2/100
+500/500 - 1s - loss: 1.1130 - accuracy: 0.6112 - val_loss: 1.1200 - val_accuracy: 0.6092
+Epoch 3/100
+500/500 - 1s - loss: 0.9552 - accuracy: 0.6698 - val_loss: 1.0577 - val_accuracy: 0.6356
+Epoch 4/100
+500/500 - 1s - loss: 0.8526 - accuracy: 0.7054 - val_loss: 1.0252 - val_accuracy: 0.6520
+Epoch 5/100
+500/500 - 1s - loss: 0.7669 - accuracy: 0.7333 - val_loss: 1.0305 - val_accuracy: 0.6510
+Epoch 6/100
+500/500 - 1s - loss: 0.6996 - accuracy: 0.7558 - val_loss: 1.0621 - val_accuracy: 0.6524
+Epoch 7/100
+500/500 - 1s - loss: 0.6375 - accuracy: 0.7779 - val_loss: 1.0748 - val_accuracy: 0.6551
+Epoch 8/100
+500/500 - 1s - loss: 0.5854 - accuracy: 0.7963 - val_loss: 1.1010 - val_accuracy: 0.6521
+Epoch 9/100
+500/500 - 1s - loss: 0.5360 - accuracy: 0.8132 - val_loss: 1.1802 - val_accuracy: 0.6415
+Epoch 10/100
+500/500 - 1s - loss: 0.4973 - accuracy: 0.8244 - val_loss: 1.2027 - val_accuracy: 0.6551
+Epoch 11/100
+500/500 - 1s - loss: 0.4544 - accuracy: 0.8400 - val_loss: 1.2722 - val_accuracy: 0.6450
+Epoch 12/100
+500/500 - 1s - loss: 0.4265 - accuracy: 0.8486 - val_loss: 1.2791 - val_accuracy: 0.6435
+Epoch 13/100
+500/500 - 1s - loss: 0.3944 - accuracy: 0.8606 - val_loss: 1.3715 - val_accuracy: 0.6401
+Epoch 14/100
+500/500 - 1s - loss: 0.3623 - accuracy: 0.8721 - val_loss: 1.4515 - val_accuracy: 0.6375
+Epoch 15/100
+500/500 - 1s - loss: 0.3400 - accuracy: 0.8786 - val_loss: 1.4891 - val_accuracy: 0.6397
+Epoch 16/100
+500/500 - 1s - loss: 0.3123 - accuracy: 0.8889 - val_loss: 1.5708 - val_accuracy: 0.6334
+Epoch 17/100
+500/500 - 1s - loss: 0.2892 - accuracy: 0.8984 - val_loss: 1.6264 - val_accuracy: 0.6351
+Epoch 18/100
+500/500 - 1s - loss: 0.2729 - accuracy: 0.9036 - val_loss: 1.6931 - val_accuracy: 0.6282
+Epoch 19/100
+500/500 - 1s - loss: 0.2522 - accuracy: 0.9113 - val_loss: 1.7459 - val_accuracy: 0.6343
+Epoch 20/100
+500/500 - 1s - loss: 0.2318 - accuracy: 0.9191 - val_loss: 1.8773 - val_accuracy: 0.6337
+Epoch 21/100
+500/500 - 1s - loss: 0.2164 - accuracy: 0.9233 - val_loss: 1.9110 - val_accuracy: 0.6326
+Epoch 22/100
+500/500 - 1s - loss: 0.2067 - accuracy: 0.9269 - val_loss: 2.0061 - val_accuracy: 0.6306
+Epoch 23/100
+500/500 - 1s - loss: 0.1936 - accuracy: 0.9307 - val_loss: 2.1165 - val_accuracy: 0.6318
+Epoch 24/100
+500/500 - 1s - loss: 0.1787 - accuracy: 0.9361 - val_loss: 2.2073 - val_accuracy: 0.6227
+Epoch 25/100
+500/500 - 1s - loss: 0.1665 - accuracy: 0.9405 - val_loss: 2.2713 - val_accuracy: 0.6256
+Epoch 26/100
+500/500 - 1s - loss: 0.1626 - accuracy: 0.9426 - val_loss: 2.3558 - val_accuracy: 0.6219
+Epoch 27/100
+500/500 - 1s - loss: 0.1453 - accuracy: 0.9490 - val_loss: 2.4396 - val_accuracy: 0.6265
+Epoch 28/100
+500/500 - 1s - loss: 0.1467 - accuracy: 0.9481 - val_loss: 2.4843 - val_accuracy: 0.6192
+Epoch 29/100
+500/500 - 1s - loss: 0.1395 - accuracy: 0.9494 - val_loss: 2.5506 - val_accuracy: 0.6237
+Epoch 30/100
+500/500 - 1s - loss: 0.1344 - accuracy: 0.9514 - val_loss: 2.7020 - val_accuracy: 0.6271
+Epoch 31/100
+500/500 - 1s - loss: 0.1292 - accuracy: 0.9532 - val_loss: 2.7678 - val_accuracy: 0.6206
+Epoch 32/100
+500/500 - 1s - loss: 0.1131 - accuracy: 0.9596 - val_loss: 2.8290 - val_accuracy: 0.6153
+Epoch 33/100
+500/500 - 1s - loss: 0.1080 - accuracy: 0.9617 - val_loss: 2.8692 - val_accuracy: 0.6218
+Epoch 34/100
+500/500 - 1s - loss: 0.1150 - accuracy: 0.9573 - val_loss: 2.9348 - val_accuracy: 0.6174
+Epoch 35/100
+500/500 - 1s - loss: 0.1124 - accuracy: 0.9593 - val_loss: 3.1101 - val_accuracy: 0.6171
+Epoch 36/100
+500/500 - 1s - loss: 0.1024 - accuracy: 0.9631 - val_loss: 3.1597 - val_accuracy: 0.6154
+Epoch 37/100
+500/500 - 1s - loss: 0.1096 - accuracy: 0.9611 - val_loss: 3.1682 - val_accuracy: 0.6208
+Epoch 38/100
+500/500 - 1s - loss: 0.0956 - accuracy: 0.9652 - val_loss: 3.3134 - val_accuracy: 0.6186
+Epoch 39/100
+500/500 - 1s - loss: 0.0889 - accuracy: 0.9681 - val_loss: 3.3268 - val_accuracy: 0.6183
+Epoch 40/100
+500/500 - 1s - loss: 0.0958 - accuracy: 0.9656 - val_loss: 3.4077 - val_accuracy: 0.6198
+Epoch 41/100
+500/500 - 1s - loss: 0.0920 - accuracy: 0.9666 - val_loss: 3.4307 - val_accuracy: 0.6167
+Epoch 42/100
+500/500 - 1s - loss: 0.0857 - accuracy: 0.9692 - val_loss: 3.5946 - val_accuracy: 0.6124
+Epoch 43/100
+500/500 - 1s - loss: 0.0901 - accuracy: 0.9680 - val_loss: 3.7094 - val_accuracy: 0.6172
+Epoch 44/100
+500/500 - 1s - loss: 0.0920 - accuracy: 0.9670 - val_loss: 3.7383 - val_accuracy: 0.6198
+Epoch 45/100
+500/500 - 1s - loss: 0.0847 - accuracy: 0.9699 - val_loss: 3.7944 - val_accuracy: 0.6161
+Epoch 46/100
+500/500 - 1s - loss: 0.0757 - accuracy: 0.9725 - val_loss: 3.8494 - val_accuracy: 0.6204
+Epoch 47/100
+500/500 - 1s - loss: 0.0864 - accuracy: 0.9692 - val_loss: 3.8960 - val_accuracy: 0.6157
+Epoch 48/100
+500/500 - 1s - loss: 0.0804 - accuracy: 0.9717 - val_loss: 4.0223 - val_accuracy: 0.6148
+Epoch 49/100
+500/500 - 1s - loss: 0.0685 - accuracy: 0.9749 - val_loss: 4.0342 - val_accuracy: 0.6221
+Epoch 50/100
+500/500 - 1s - loss: 0.0724 - accuracy: 0.9743 - val_loss: 4.0881 - val_accuracy: 0.6140
+Epoch 51/100
+500/500 - 1s - loss: 0.0973 - accuracy: 0.9667 - val_loss: 4.1269 - val_accuracy: 0.6134
+Epoch 52/100
+500/500 - 1s - loss: 0.0823 - accuracy: 0.9711 - val_loss: 4.0810 - val_accuracy: 0.6162
+Epoch 53/100
+500/500 - 1s - loss: 0.0691 - accuracy: 0.9751 - val_loss: 4.3656 - val_accuracy: 0.6157
+Epoch 54/100
+500/500 - 1s - loss: 0.0616 - accuracy: 0.9774 - val_loss: 4.3250 - val_accuracy: 0.6131
+Epoch 55/100
+500/500 - 1s - loss: 0.0746 - accuracy: 0.9741 - val_loss: 4.4971 - val_accuracy: 0.6190
+Epoch 56/100
+500/500 - 1s - loss: 0.0870 - accuracy: 0.9694 - val_loss: 4.4637 - val_accuracy: 0.6159
+Epoch 57/100
+500/500 - 1s - loss: 0.0769 - accuracy: 0.9738 - val_loss: 4.5275 - val_accuracy: 0.6140
+Epoch 58/100
+500/500 - 1s - loss: 0.0604 - accuracy: 0.9780 - val_loss: 4.6272 - val_accuracy: 0.6129
+Epoch 59/100
+500/500 - 1s - loss: 0.0733 - accuracy: 0.9740 - val_loss: 4.6931 - val_accuracy: 0.6129
+Epoch 60/100
+500/500 - 1s - loss: 0.0717 - accuracy: 0.9752 - val_loss: 4.7035 - val_accuracy: 0.6147
+Epoch 61/100
+500/500 - 1s - loss: 0.0690 - accuracy: 0.9759 - val_loss: 4.7949 - val_accuracy: 0.6177
+Epoch 62/100
+500/500 - 1s - loss: 0.0708 - accuracy: 0.9753 - val_loss: 4.8524 - val_accuracy: 0.6129
+Epoch 63/100
+500/500 - 1s - loss: 0.0823 - accuracy: 0.9710 - val_loss: 4.9000 - val_accuracy: 0.6140
+Epoch 64/100
+500/500 - 1s - loss: 0.0706 - accuracy: 0.9755 - val_loss: 4.9401 - val_accuracy: 0.6180
+Epoch 65/100
+500/500 - 1s - loss: 0.0637 - accuracy: 0.9785 - val_loss: 4.8500 - val_accuracy: 0.6188
+Epoch 66/100
+500/500 - 1s - loss: 0.0536 - accuracy: 0.9809 - val_loss: 5.0398 - val_accuracy: 0.6176
+Epoch 67/100
+500/500 - 1s - loss: 0.0735 - accuracy: 0.9752 - val_loss: 5.0866 - val_accuracy: 0.6133
+Epoch 68/100
+500/500 - 1s - loss: 0.0706 - accuracy: 0.9756 - val_loss: 5.0861 - val_accuracy: 0.6114
+Epoch 69/100
+500/500 - 1s - loss: 0.0747 - accuracy: 0.9748 - val_loss: 5.1750 - val_accuracy: 0.6168
+Epoch 70/100
+500/500 - 1s - loss: 0.0748 - accuracy: 0.9754 - val_loss: 5.1561 - val_accuracy: 0.6134
+Epoch 71/100
+500/500 - 1s - loss: 0.0609 - accuracy: 0.9794 - val_loss: 5.2086 - val_accuracy: 0.6154
+Epoch 72/100
+500/500 - 1s - loss: 0.0549 - accuracy: 0.9800 - val_loss: 5.3770 - val_accuracy: 0.6110
+Epoch 73/100
+500/500 - 1s - loss: 0.0771 - accuracy: 0.9751 - val_loss: 5.4109 - val_accuracy: 0.6157
+Epoch 74/100
+500/500 - 1s - loss: 0.0634 - accuracy: 0.9778 - val_loss: 5.4785 - val_accuracy: 0.6143
+Epoch 75/100
+500/500 - 1s - loss: 0.0779 - accuracy: 0.9741 - val_loss: 5.5861 - val_accuracy: 0.6147
+Epoch 76/100
+500/500 - 1s - loss: 0.0664 - accuracy: 0.9778 - val_loss: 5.6476 - val_accuracy: 0.6148
+Epoch 77/100
+500/500 - 1s - loss: 0.0622 - accuracy: 0.9788 - val_loss: 5.5894 - val_accuracy: 0.6200
+Epoch 78/100
+500/500 - 1s - loss: 0.0593 - accuracy: 0.9795 - val_loss: 5.6244 - val_accuracy: 0.6138
+Epoch 79/100
+500/500 - 1s - loss: 0.0543 - accuracy: 0.9817 - val_loss: 5.9743 - val_accuracy: 0.6135
+Epoch 80/100
+500/500 - 1s - loss: 0.0760 - accuracy: 0.9754 - val_loss: 5.7870 - val_accuracy: 0.6133
+Epoch 81/100
+500/500 - 1s - loss: 0.0660 - accuracy: 0.9778 - val_loss: 5.9154 - val_accuracy: 0.6120
+Epoch 82/100
+500/500 - 1s - loss: 0.0713 - accuracy: 0.9763 - val_loss: 5.9979 - val_accuracy: 0.6173
+Epoch 83/100
+500/500 - 1s - loss: 0.0609 - accuracy: 0.9804 - val_loss: 5.9968 - val_accuracy: 0.6086
+Epoch 84/100
+500/500 - 1s - loss: 0.0481 - accuracy: 0.9843 - val_loss: 6.0135 - val_accuracy: 0.6185
+Epoch 85/100
+500/500 - 1s - loss: 0.0643 - accuracy: 0.9788 - val_loss: 6.0364 - val_accuracy: 0.6114
+Epoch 86/100
+500/500 - 1s - loss: 0.0715 - accuracy: 0.9767 - val_loss: 6.2075 - val_accuracy: 0.6173
+Epoch 87/100
+500/500 - 1s - loss: 0.0694 - accuracy: 0.9788 - val_loss: 6.3177 - val_accuracy: 0.6153
+Epoch 88/100
+500/500 - 1s - loss: 0.0676 - accuracy: 0.9792 - val_loss: 6.1930 - val_accuracy: 0.6113
+Epoch 89/100
+500/500 - 1s - loss: 0.0634 - accuracy: 0.9801 - val_loss: 6.2325 - val_accuracy: 0.6168
+Epoch 90/100
+500/500 - 1s - loss: 0.0533 - accuracy: 0.9822 - val_loss: 6.2055 - val_accuracy: 0.6147
+Epoch 91/100
+500/500 - 1s - loss: 0.0682 - accuracy: 0.9786 - val_loss: 6.4200 - val_accuracy: 0.6168
+Epoch 92/100
+500/500 - 1s - loss: 0.0674 - accuracy: 0.9788 - val_loss: 6.5308 - val_accuracy: 0.6176
+Epoch 93/100
+500/500 - 1s - loss: 0.0592 - accuracy: 0.9822 - val_loss: 6.6493 - val_accuracy: 0.6113
+Epoch 94/100
+500/500 - 1s - loss: 0.0658 - accuracy: 0.9791 - val_loss: 6.4046 - val_accuracy: 0.6138
+Epoch 95/100
+500/500 - 1s - loss: 0.0541 - accuracy: 0.9828 - val_loss: 6.6539 - val_accuracy: 0.6112
+Epoch 96/100
+500/500 - 1s - loss: 0.0619 - accuracy: 0.9803 - val_loss: 6.7316 - val_accuracy: 0.6131
+Epoch 97/100
+500/500 - 1s - loss: 0.0702 - accuracy: 0.9791 - val_loss: 6.7019 - val_accuracy: 0.6137
+Epoch 98/100
+500/500 - 1s - loss: 0.0560 - accuracy: 0.9826 - val_loss: 6.7939 - val_accuracy: 0.6074
+Epoch 99/100
+500/500 - 1s - loss: 0.0656 - accuracy: 0.9809 - val_loss: 6.8788 - val_accuracy: 0.6165
+Epoch 100/100
+500/500 - 1s - loss: 0.0669 - accuracy: 0.9790 - val_loss: 6.7815 - val_accuracy: 0.6191
+
+real    2m4.740s
+user    2m26.097s
+sys     0m26.538s
+

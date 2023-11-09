@@ -1,0 +1,27 @@
+
+     Dimitri Bourilkov  7-Nov-2023
+
+       PyTorch Image Processing
+
+1) Copy the file
+
+pytorch-multigpu.py
+
+to your working directory (preferably on the /blue filesystyem).
+
+2) Load PyTorch
+
+ml purge
+ml ngc-pytorch/1.11.0
+ml
+
+3) Run the example on 1 Gpu
+
+time python pytorch-multigpu.py --num-gpus 1
+
+and then on 2 GPUs
+
+time python pytorch-multigpu.py --num-gpus 2
+
+and compare the image processing speeds.
+
